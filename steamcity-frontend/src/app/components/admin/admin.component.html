@@ -1,0 +1,25 @@
+
+<div class="container">
+  <table class="table table-bordered table-inverse">
+    <tr>
+      <th class="text-center">Name</th>
+      <th class="text-center">Email</th>
+      <th class="text-center">Diet</th>
+      <th class="text-center">Other Dietary Requirements</th>
+    </tr>
+    <tr *ngFor="let attendee of attendees">
+      <td class="text-center">
+        <a [routerLink]="['/admin/view', attendee.id]">{{attendee.name}}</a>
+      </td>
+      <td class="text-center">
+        {{attendee.email}}
+      </td>
+      <td class="text-center">
+        {{attendee.model}}
+      </td>
+      <td class="text-center">
+        {{attendee.purchasePrice}}
+      </td>
+    </tr>
+  </table>
+</div>
