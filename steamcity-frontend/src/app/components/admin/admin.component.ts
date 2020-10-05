@@ -9,17 +9,17 @@ import { AttendeeService } from '../../services/attendee.service';
 export class AdminComponent implements OnInit {
   public attendees;
 
-  constructor(private bikeService: AttendeeService) { }
+  constructor(private attendeeService: AttendeeService) { }
 
   ngOnInit() {
-    this.getBikes();
+    this.getAttendees();
   }
 
-  getBikes() {
-    this.bikeService.getAttendees().subscribe(
+  getAttendees() {
+    this.attendeeService.getAttendees().subscribe(
       data => {this.attendees = data},
       err => console.error(err),
-      () => console.log('bikes loaded')
+      () => console.log('attendees loaded')
     );
   }
 }

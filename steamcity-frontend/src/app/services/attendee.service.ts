@@ -21,8 +21,8 @@ export class AttendeeService {
     return this.http.get('/server/api/v1/bikes/' + id);
   }
 
-  createAttendeeRegistration(bike) {
-    let body = JSON.stringify(bike);
+  createAttendeeRegistration(attendee) {
+    let body = JSON.stringify(attendee);
     return this.http.post('/server/api/v1/bikes', body, httpOptions);
   }
 }
