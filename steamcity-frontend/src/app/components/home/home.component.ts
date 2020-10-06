@@ -27,8 +27,8 @@ export class HomeComponent implements OnInit {
       name: new FormControl('', Validators.required),
       email: new FormControl('', Validators.required),
       phone: new FormControl('', Validators.required),
-      model: new FormControl('', Validators.required),
-      purchasePrice: new FormControl('', Validators.required),
+      diet: new FormControl('', Validators.required),
+      dietReq: new FormControl('', Validators.required),
       preferenceDate: new FormControl('', Validators.required),
       hasPaid: new FormControl('', Validators.required)
     });

@@ -22,10 +22,10 @@ public class Bike {
     private String name;
     private String email;
     private String phone;
-    private String model;
+    private String diet;
     private String serialNumber;
     private String hasPaid;
-    private String purchasePrice;
+    private String dietReq;
     private Date preferenceDate;
     private Boolean contact;
 
@@ -61,12 +61,12 @@ public class Bike {
         this.phone = phone;
     }
 
-    public String getModel() {
-        return model;
+    public String getDiet() {
+        return diet;
     }
 
-    public void setModel(String model) {
-        this.model = model;
+    public void setDiet(String diet) {
+        this.diet = diet;
     }
 
     public String getSerialNumber() {
@@ -77,12 +77,12 @@ public class Bike {
         this.serialNumber = serialNumber;
     }
 
-    public String getPurchasePrice() {
-        return purchasePrice;
+    public String getDietReq() {
+        return dietReq;
     }
 
-    public void setPurchasePrice(String purchasePrice) {
-        this.purchasePrice = purchasePrice;
+    public void setDietReq(String dietReq) {
+        this.dietReq = dietReq;
     }
 
     public Date getPreferenceDate() {

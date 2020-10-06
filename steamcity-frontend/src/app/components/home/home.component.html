@@ -17,7 +17,7 @@
     </div>
     <div class="form-group">
       <label>Diet</label>
-      <select class="form-control" formControlName="model" required>
+      <select class="form-control" formControlName="diet" required>
         <option value="">Please select a diet</option>
         <option *ngFor="let d of diets"
                 [value]="d">
@@ -27,7 +27,7 @@
     </div>
     <div class="form-group">
       <label>Other Diet Requirements</label>
-      <input type="text" class="form-control" formControlName="purchasePrice" required/>
+      <input type="text" class="form-control" formControlName="dietReq" required/>
     </div>
     <div class="form-group">
       <label>Preference Date (yyyy-mm-dd)</label>
