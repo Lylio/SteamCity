@@ -1,6 +1,6 @@
 package com.lylechristine.steamcity.controllers;
 
-import com.lylechristine.steamcity.models.Bike;
+import com.lylechristine.steamcity.models.Attendee;
 import com.lylechristine.steamcity.repositories.AttendeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,20 +18,20 @@ public class AttendeeController {
 
     //Get list of all attendees
     @GetMapping
-    public List<Bike> list() {
+    public List<Attendee> list() {
         return attendeeRepository.findAll();
     }
 
     //Create a new attendee
     @PostMapping
     @ResponseStatus(HttpStatus.OK)
-    public void create(@RequestBody Bike bike) {
-        attendeeRepository.save(bike);
+    public void create(@RequestBody Attendee attendee) {
+        attendeeRepository.save(attendee);
     }
 
     //View attendee based on id
     @GetMapping("/{id}")
-    public Bike get(@PathVariable("id") long id) {
+    public Attendee get(@PathVariable("id") long id) {
         return attendeeRepository.getOne(id);
     }
 }

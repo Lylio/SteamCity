@@ -9,7 +9,7 @@ import java.sql.Date;
 
 @Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-public class Bike {
+public class Attendee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
