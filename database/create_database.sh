@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 create_database() {
+ echo "**creating database...**"
  echo "**database running**"
- cd ../database
- sqlite3 bike.db < ../database/bikes-sales.sql
+ sqlite3 attendee.db < attendees.sql
 }
 
 create_database

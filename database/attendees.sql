@@ -1,20 +1,3 @@
-# Create SQLite Database
-
-## Shell Script
-
-1. `./create_database.sh`
-
-## Manually Method
-
-1. `sudo apt install sqlite3`
-
-2. `sqlite3 --version`
-
-3. `sqlite3 attendee.db`
-
-4. Insert following SQL
-
-```sql
 CREATE TABLE
     attendee
     (
@@ -44,4 +27,3 @@ CREATE TABLE
     );
     
 INSERT INTO hibernate_sequence (next_val) VALUES (4);
-```

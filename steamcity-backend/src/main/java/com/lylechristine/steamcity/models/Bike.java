@@ -1,15 +1,11 @@
-package com.globomatics.bike.models;
+package com.lylechristine.steamcity.models;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.math.BigDecimal;
 import java.sql.Date;
-
 
 @Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
@@ -23,11 +19,9 @@ public class Bike {
     private String email;
     private String phone;
     private String diet;
-    private String serialNumber;
     private String hasPaid;
     private String dietReq;
     private Date preferenceDate;
-    private Boolean contact;
 
     public Long getId() {
         return id;
@@ -69,14 +63,6 @@ public class Bike {
         this.diet = diet;
     }
 
-    public String getSerialNumber() {
-        return serialNumber;
-    }
-
-    public void setSerialNumber(String serialNumber) {
-        this.serialNumber = serialNumber;
-    }
-
     public String getDietReq() {
         return dietReq;
     }
@@ -91,14 +77,6 @@ public class Bike {
 
     public void setPreferenceDate(Date preferenceDate) {
         this.preferenceDate = preferenceDate;
-    }
-
-    public Boolean getContact() {
-        return contact;
-    }
-
-    public void setContact(Boolean contact) {
-        this.contact = contact;
     }
 
     public String getHasPaid() {

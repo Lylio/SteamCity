@@ -1,13 +1,13 @@
-package com.globomatics.bike;
+package com.lylechristine.steamcity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BikeApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(BikeApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }
