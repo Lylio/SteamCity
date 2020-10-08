@@ -10,7 +10,7 @@
 
 2. `sqlite3 --version`
 
-3. `sqlite3 attendee.db`
+3. `sqlite3 attendeeTEST.db`
 
 4. Insert following SQL
 
