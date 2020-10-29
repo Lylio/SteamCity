@@ -1,0 +1,36 @@
+  spring:
+    jpa:
+      database-platform: org.hibernate.dialect.SQLiteDialect
+      hibernate.ddl-auto: none
+      show-sql: true
+    datasource:
+      url: jdbc:sqlite:database/attendee.db
+      username:
+      password:
+      driver-class-name: org.sqlite.JDBC
+
+# LOGGING
+logging:
+  file: /home/lylio/Documents/logs/steamcity.log
+
+# BANNER
+spring.banner.location: classpath:banner.txt
+
+# ENDPOINT MANAGEMENT
+management:
+  endpoint:
+    info:
+      enabled: true
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+    health:
+      show-details: always
+      enabled: true
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
