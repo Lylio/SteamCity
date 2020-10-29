@@ -1,0 +1,30 @@
+version: '3'
+services:
+
+  steamcity-sqlite3:
+    sqlite3:
+        image: nouchka/sqlite3:latest
+        stdin_open: true
+        tty: true
+        volumes:
+          - ./db/:/root/db/
+
+  steamcity-backend:
+    build: ./steamcity-backend
+    container_name: steamcity-backend
+    ports:
+      - 8080
+    links:
+      - steamcity-sqlite3
+
+  steamcity-frontend:
+    build: ./steamcity-frontend
+    container_name: steamcity-frontend
+    ports:
+      - 4200:80
+    links:
+      - steamcity-backend
+
+
+volumes:
+  steamcity-data:
