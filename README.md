@@ -8,9 +8,14 @@
 ### Description
 Attendee registration app for social events such as team nights out. Demo can be found at (coming soon).
 
-#### Docker-Compose Launch
-1. `docker-compose up` - this command will spin up the Spring Boot, Angular and SQLite-database containers. Access the app
-at (coming soon)
+#### Launch Backend
+1. Ensure MySQL is running
+2. `cd steamcity-backend`
+3. `mvn spring-boot:run`
 
-#### MySQL Database
-Coming soon
+#### Launch Frontend
+1. `cd steamcity-frontend`
+2. `npm install`
+3. `npm start`
+4. Navigate to http://localhost:4200
+
